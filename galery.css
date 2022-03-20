@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: bold;
+    }
+.kutija {
+    background: linear-gradient(blue 65%, beige 35%);
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    text-align: center;
+    padding: 0%;
+    }
+img {
+    max-width: 100%;
+    height: auto;
+    }
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    }
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    vertical-align: bottom;
+    }
+@media screen and (max-width: 1024px) {
+    #grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+        #grid {
+            grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 414px) {
+            #grid {
+                grid-template-columns: repeat(1, 1fr);
+    }
+}
